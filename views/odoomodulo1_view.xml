@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<record model="ir.ui.view" id="inherit_respartner_modulo1_id"> <!-- id externo = inherit_respartner_hola_id-->
+			<field name="name">res.partner.inherit</field> <!-- vistas heredadas-->
+			<field name="model">res.partner</field> <!-- modelo = res.partner-->
+			<field name="type">form</field>
+			<field name="inherit_id" ref="base.view_partner_form"/> <!-- id externo = base.view_partner_form'''-->
+			<field name="priority" eval="16"/> <!-- 16 es secuencia-->
+			<field name="arch" type="xml">
+				<field name="phone" position="after">
+					<field name="brand"/>
+					<field name="edge"/>
+				</field>
+			</field>
+		</record>
+	</data>
+</odoo>

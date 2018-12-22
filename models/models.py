@@ -4,5 +4,7 @@ class res_partner(models.Model):
 	_name = 'res.partner'
 	_inherit = 'res.partner'
 	
-	hola = fields.Boolean('Hola')
+	brand = fields.Char(String = "marca")
+	edge = fields.Integer()
+
 	
