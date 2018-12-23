@@ -11,8 +11,10 @@
 				<notebook>
 				<!--<field name="phone" position="after">-->
 					<page string="Información Extra" name="newtab">
+					<group>
 					<field name="brand"/>
 					<field name="edge"/>
+					</group>
 					</page>
 				</notebook>
 				<!--</field>-->
