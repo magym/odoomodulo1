@@ -7,8 +7,7 @@
 	'summary':'Módulo creado para 1er objetivo',
 	'depends':['base','account'],
 	'data':[
-	'views/odoomodulo1_view.xml',
-	'views/crudmodel_view.xml'
+	'views/odoomodulo1_view.xml'
 	],
 	'installable':True,
 	'auto_install':True,

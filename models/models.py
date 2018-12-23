@@ -1,10 +1,10 @@
-from odoo import models, fields
+from odoo import models, fields, api
     
 class res_partner(models.Model):
 	_name = 'res.partner'
 	_inherit = 'res.partner'
 	
-	brand = fields.Char(String = 'Marca')
-	edge = fields.Integer()
+	brand = fields.Char('Marca')
+	edge = fields.Integer('Edad')
 
-	brand_id = fields.Many2one('odoomodulo.brand', String="Marca")
+	#field_Many2one = fields.Many2one('odoomodulo.brand', String='Brand')

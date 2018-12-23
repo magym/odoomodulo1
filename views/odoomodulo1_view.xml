@@ -6,12 +6,16 @@
 			<field name="model">res.partner</field> <!-- modelo = res.partner-->
 			<field name="type">form</field>
 			<field name="inherit_id" ref="base.view_partner_form"/> <!-- id externo = base.view_partner_form'''-->
-			<field name="priority" eval="16"/> <!-- 16 es secuencia-->
+			<!--<field name="priority" eval="16"/> <! 16 es secuencia-->
 			<field name="arch" type="xml">
-				<field name="phone" position="after">
+				<notebook>
+				<!--<field name="phone" position="after">-->
+					<page string="Información Extra" name="newtab">
 					<field name="brand"/>
 					<field name="edge"/>
-				</field>
+					</page>
+				</notebook>
+				<!--</field>-->
 			</field>
 		</record>
 	</data>
